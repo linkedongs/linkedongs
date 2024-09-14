@@ -1,0 +1,45 @@
+.ong-page {
+    padding: 50px;
+    max-width: 80%;
+    margin: 30px auto;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px;
+  }
+  
+  .ong-page h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .ong-page p {
+    font-size: 1.2em;
+    line-height: 1.6;
+  }
+  
+  .ong-contact {
+    margin-top: 20px;
+  }
+  
+  .ong-contact h2 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .ong-contact p,
+  .ong-contact a {
+    font-size: 1.1em;
+    color: #2953af;
+    text-decoration: none;
+  }
+  
+  .ong-contact p{
+    cursor: pointer;
+  }
+  
+  .ong-contact p:hover{
+   text-decoration: underline;
+  }
+  

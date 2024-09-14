@@ -1,0 +1,72 @@
+[
+  {
+    "id": 4,
+    "name": "SOS Mata Atlântica",
+    "titulo": "Proteja a Mata Atlântica!",
+    "categoria": "Meio Ambiente",
+    "descricao": "A Fundação SOS Mata Atlântica está comprometida com a proteção e restauração da Mata Atlântica. Participe de nossos projetos de conservação e ajude a preservar uma das florestas mais biodiversas do mundo."
+  },
+  {
+    "id": 5,
+    "name": "Greenpeace Brasil",
+    "titulo": "Ajude a Defender o Meio Ambiente!",
+    "categoria": "Meio Ambiente",
+    "descricao": "Greenpeace Brasil atua em campanhas para proteger florestas, mares e combater as mudanças climáticas. Junte-se a nós e faça a diferença!"
+  },
+  {
+    "id": 6,
+    "name": "Anistia Internacional Brasil",
+    "titulo": "Lute pelos Direitos Humanos!",
+    "categoria": "Direitos Humanos",
+    "descricao": "Anistia Internacional Brasil trabalha para proteger pessoas cujos direitos humanos estão sendo violados. Mobilize-se e faça parte deste movimento global!"
+  },
+  {
+    "id": 7,
+    "name": "Instituto Socioambiental (ISA)",
+    "titulo": "Proteção de Comunidades Tradicionais!",
+    "categoria": "Direitos Humanos",
+    "descricao": "O Instituto Socioambiental (ISA) apoia comunidades indígenas e tradicionais na promoção de seus direitos e na conservação ambiental. Contribua para um futuro mais justo e sustentável!"
+  },
+  {
+    "id": 8,
+    "name": "GRAACC",
+    "titulo": "Ajude na Luta contra o Câncer Infantil!",
+    "categoria": "Assistência Social",
+    "descricao": "O GRAACC oferece tratamento de alta qualidade para crianças e adolescentes com câncer. Sua doação pode transformar vidas e trazer esperança!"
+  },
+  {
+    "id": 9,
+    "name": "Casa de David",
+    "titulo": "Apoie a Inclusão Social!",
+    "categoria": "Assistência Social",
+    "descricao": "A Casa de David presta assistência a pessoas com deficiência intelectual e física, promovendo saúde, educação e inclusão social. Faça parte dessa causa!"
+  },
+  {
+    "id": 10,
+    "name": "Ampara Animal",
+    "titulo": "Proteja os Animais!",
+    "categoria": "Proteção Animal",
+    "descricao": "Ampara Animal resgata, trata e promove a adoção de animais abandonados. Junte-se a nós na defesa dos direitos dos animais e na promoção de um lar amoroso para cada um deles!"
+  },
+  {
+    "id": 11,
+    "name": "Instituto Luisa Mell",
+    "titulo": "Resgate e Adoção de Animais!",
+    "categoria": "Proteção Animal",
+    "descricao": "O Instituto Luisa Mell atua no resgate de animais em situação de risco, oferecendo cuidados veterinários e promovendo adoções. Ajude-nos a dar uma segunda chance a esses animais!"
+  },
+  {
+    "id": 12,
+    "name": "Projeto Segunda Chance",
+    "titulo": "Dê uma Segunda Chance!",
+    "categoria": "Pets",
+    "descricao": "O Projeto Segunda Chance resgata animais abandonados e oferece cuidados médicos até que encontrem um lar definitivo. Adote ou contribua para essa causa!"
+  },
+  {
+    "id": 13,
+    "name": "Lar Temporário Patinhas",
+    "titulo": "Acolha um Animalzinho!",
+    "categoria": "Pets",
+    "descricao": "O Lar Temporário Patinhas acolhe animais resgatados, proporcionando abrigo e cuidados veterinários até que encontrem um lar permanente. Apoie essa missão de amor e cuidado!"
+  }
+]
