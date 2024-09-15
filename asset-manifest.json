@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/linkedongs/static/css/main.226e7fac.css",
-    "main.js": "/linkedongs/static/js/main.5a969b6f.js",
+    "main.js": "/linkedongs/static/js/main.e334a69d.js",
     "index.html": "/linkedongs/index.html",
     "main.226e7fac.css.map": "/linkedongs/static/css/main.226e7fac.css.map",
-    "main.5a969b6f.js.map": "/linkedongs/static/js/main.5a969b6f.js.map"
+    "main.e334a69d.js.map": "/linkedongs/static/js/main.e334a69d.js.map"
   },
   "entrypoints": [
     "static/css/main.226e7fac.css",
-    "static/js/main.5a969b6f.js"
+    "static/js/main.e334a69d.js"
   ]
 }
