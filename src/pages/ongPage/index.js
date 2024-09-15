@@ -4,33 +4,20 @@ import "./ongPage.css";
 import { IoMdMail } from "react-icons/io";
 import { CgWebsite } from "react-icons/cg";
 import { BiDonateHeart } from "react-icons/bi";
+import ongs from "./ongs.json";  // Importa o arquivo JSON diretamente
 
 function OngPage() {
   const { id } = useParams();
   const [ong, setOng] = useState(null);
 
-  const fetchOng = async () => {
-    try {
-      const response = await fetch("https://linkedongs.github.io/linkedongs/data/ongs.json");
-      if (!response.ok) {
-        throw new Error(`Erro ao carregar dados das ONGs: ${response.statusText}`);
-      }
-      const data = await response.json();
-      const selectedOng = data.find((ong) => ong.id === parseInt(id));
-      
-      if (!selectedOng) {
-        throw new Error('ONG não encontrada');
-      }
-
-      setOng(selectedOng);
-    } catch (error) {
-      console.error("Erro ao carregar dados da ONG:", error);
-      setOng(null); // Exibe mensagem de erro
-    }
-  };
-
   useEffect(() => {
-    fetchOng();
+    const selectedOng = ongs.find((ong) => ong.id === parseInt(id));
+    if (selectedOng) {
+      setOng(selectedOng);
+    } else {
+      console.error('ONG não encontrada');
+      setOng(null);
+    }
   }, [id]);
 
   if (!ong) {
