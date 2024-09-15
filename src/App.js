@@ -1,12 +1,10 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import Feed from "./pages/feed";
-import AboutUs from "./pages/aboutUs";
 import CategoriesPage from "./pages/categories";
 import OngPage from "./pages/ongPage"; 
 import Footer from "./components/footer";
 import Header from "./components/header/header";
-
 
 function App() {
   return (
@@ -17,7 +15,6 @@ function App() {
           <Routes>
             <Route path="/" element={<Feed />} />
             <Route path="/feed" element={<Feed />} />
-            <Route path="/about" element={<AboutUs />} />
             <Route path="/categories/:category" element={<CategoriesPage />} />
             <Route path="/ong/:id" element={<OngPage />} />
           </Routes>

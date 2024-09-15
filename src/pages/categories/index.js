@@ -13,7 +13,7 @@ function CategoriesPage() {
   // Função para carregar dados de ONGs a partir de um arquivo JSON
   const fetchOngs = async () => {
     try {
-      const response = await fetch("/data/ongs.json");
+      const response = await fetch("https://linkedongs.github.io/linkedongs/data/ongs.json");
       if (!response.ok) {
         throw new Error(`Erro ao carregar dados das ONGs: ${response.statusText}`);
       }

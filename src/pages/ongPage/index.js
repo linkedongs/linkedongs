@@ -5,23 +5,27 @@ import { IoMdMail } from "react-icons/io";
 import { CgWebsite } from "react-icons/cg";
 import { BiDonateHeart } from "react-icons/bi";
 
-
-
 function OngPage() {
   const { id } = useParams();
   const [ong, setOng] = useState(null);
 
   const fetchOng = async () => {
     try {
-      const response = await fetch("/data/ongs.json");
+      const response = await fetch("https://linkedongs.github.io/linkedongs/data/ongs.json");
       if (!response.ok) {
         throw new Error(`Erro ao carregar dados das ONGs: ${response.statusText}`);
       }
       const data = await response.json();
       const selectedOng = data.find((ong) => ong.id === parseInt(id));
+      
+      if (!selectedOng) {
+        throw new Error('ONG não encontrada');
+      }
+
       setOng(selectedOng);
     } catch (error) {
       console.error("Erro ao carregar dados da ONG:", error);
+      setOng(null); // Exibe mensagem de erro
     }
   };
 
@@ -30,7 +34,7 @@ function OngPage() {
   }, [id]);
 
   if (!ong) {
-    return <div>Carregando...</div>;
+    return <div>ONG não encontrada ou erro ao carregar os dados.</div>;
   }
 
   return (
@@ -38,7 +42,6 @@ function OngPage() {
       <h1>{ong.name}</h1>
       <p>{ong.summary}</p>
       {ong.details && <p>{ong.details}</p>}
-      {/* Adicione mais informações conforme necessário */}
       <div className="ong-contact">
         {ong.contact && (
           <div>
@@ -48,8 +51,7 @@ function OngPage() {
         )}
         {ong.website && (
           <div>
-            <h2>Website <CgWebsite />
-            </h2>
+            <h2>Website <CgWebsite /></h2>
             <a href={ong.website} target="_blank" rel="noopener noreferrer">
               Visite nosso site
             </a>
@@ -57,8 +59,7 @@ function OngPage() {
         )}
         {ong.donationLink && (
           <div>
-            <h2>Doações <BiDonateHeart />
-            </h2>
+            <h2>Doações <BiDonateHeart /></h2>
             <a href={ong.donationLink} target="_blank" rel="noopener noreferrer">
               Faça uma doação
             </a>
